@@ -1,0 +1,536 @@
+* {
+    padding: 0;
+    margin: 0;
+    scrollbar-width: none;
+}
+/* Style sheet Patrick Feeney GAZE FILM FESTIVAL */
+body {
+    font-family: space-mono, sans-serif;
+    background-color: #e4e41f;
+}
+@media (min-width:850px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    /* THIS IS OUR ENTIRE SIDEBAR */
+    /* NO SCROLL BAR COMMAND */
+body {
+    overflow: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+body::-webkit-scrollbar {
+    display: none;
+}
+/* AUDIO */
+audio {
+    height: 2vw;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e618ca;
+    border: 1px solid black;
+}
+/* HEADER */
+.row2 {
+    display: flex;
+}
+/* MOBILE DIV DISPLAY */
+#mobile {
+    display: none;
+}
+.container2 {
+    position: inline-block;
+}
+header {
+    border: 1pt solid black;
+    height: 4.5vw;
+    background-color: #e4e41f;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+header h1 {
+    font-family: coolvetica, sans-serif;
+    color: black;
+    font-weight: 300; 
+    font-size: 3.9vw;
+    white-space: nowrap;
+    /*
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+    */
+    /* ANimation (dont forget the keyframes at the end of the doc */
+    animation: scrollText 30s infinite linear;
+}
+#menu {
+    width: 101vw !important;
+}
+/*
+header h1 span {
+    color: #00AEEF;
+}
+*/
+/* no scrollbar */
+header {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+header::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+/* first line */
+.row { /* OUR MAIN CONTAINER */
+    border: 1pt solid black;
+    display: flex;
+    height: 100vh;
+}
+.container { /* OUR SUB CONTAINER */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    position: inline-block;
+    border-right: 1pt solid black;
+    text-align: center;
+    background-color: #ebebeb;
+    height: 100vh;
+    overflow: scroll;
+}
+.container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+.container img {
+    height: relative;
+    width: 100%;
+}
+/* LIST OF MENU ITEMS ON LEFT/ MAIN MENU */
+a {
+    text-decoration: none;
+}
+.subhead {
+    height: 1.7vw;
+    border-bottom: 1pt solid black;
+    font-size: 0.9vw;
+    text-align: left;
+    background-color: #e4e41f;
+}
+.subhead p {
+    padding-top: 2px;
+    padding-left: 5px;
+}
+.Head {
+    height: fit-content;
+    border-bottom: 1pt solid black;
+    font-size: 2.55vw;
+    text-align: left;
+    width: 21vw;
+    background-color: #ebebeb;
+}
+/* if you remove this the whole second menu dissapears */
+#deskhide {
+    display: none;
+}
+.Head h1 {
+    color: black;
+    /* text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000; */
+    font-weight: 300;
+    font-family: nimbus-sans-extended, sans-serif;
+    padding-left: 1vw;
+}
+.Head:hover {
+    background-color:#e4e41f;
+    background-size: 100%;
+}
+.Head:hover h1 {
+    color: black;
+}
+/* SECOND ROW OF MENU/ SUBMENU */
+/* HERE IS  OUR DROPDOWN MENU */
+.subhead2 {
+    height: 1.7vw;
+    width: auto;
+    border-bottom: 1pt solid black;
+    font-size: 0.9vw;
+    text-align: left;
+    background-color: #e4e41f;
+}
+.subhead2 p {
+    padding-top: 2px;
+    padding-left: 5px;
+}
+.Head2 {
+    width: 17vw;
+    background-color: #ebebeb;
+    height: fit-content;
+    border-bottom: 1pt solid black;
+    font-size: 1.3vw;
+    text-align: left;
+}
+.Head2 h1 {
+    color: black;
+    /* text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000; */
+    font-weight: 300;
+    font-family: nimbus-sans-extended, sans-serif;
+    padding-left: 1vw;
+}
+.Head2, #pink {
+    background-color:#ebebeb;
+}
+.Head2:hover {
+    background-color:#e4e41f;
+}
+.Head2:hover h1 {
+    color: black;
+}
+.long {
+    height: 26.55vw;
+    background-color: #e4e41f;
+}
+.long, #extra {
+    height: 31.5vw;
+}
+.long, #index {
+    height: 36.2vw;
+}
+.long, #tickets {
+    height: 31.4vw;
+}
+/* MAIN CONTENT/ THIRD COLUMN/ IMAGES AND TEXT SECTION */
+.content {
+    background-color:#ebebeb;
+    text-align: left;
+    padding: 1vw;
+    width: 59.8vw;
+    height: 90vh;
+    overflow: scroll;
+}
+#gallery .content {
+    overflow: hidden;
+}
+/* FIGURE STYLES FOR OUR SCROLLING GALLERY */
+#scroll figure {
+    /* ANimation (dont forget the keyframes at the end of the doc */
+    animation: scrollGallery 180s infinite linear;
+    background-color:#e4e41f;
+    box-shadow: 0.2vw 0.2vw black;
+    border: 1px solid black;
+}
+#scroll img {
+    border-bottom: 1px solid black;
+      /* I added a border to all images further up the page, which added onto the border for the figcaption
+      , so I removed the border on images under the scroll id, so half the border is here, the other half is 
+      furhter up the page, dont judge me I'm a freelancer */
+    border-left: none;
+    border-top: none;
+}
+#scroll figure:hover img {
+    mix-blend-mode: multiply;
+    opacity: 70%;
+}
+#scroll figcaption {
+    font-family: space-mono, sans-serif;
+    font-size: small;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    color: black;
+}
+.content p {
+    padding-right: 20vw;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+.content p span {
+    font-weight: 500;
+}
+/* TITLES */
+.content h1 {
+    font-family: nimbus-sans-extended, sans-serif;
+    font-weight: 300;
+    font-size: 3vw;
+    padding-left: 3pt;
+}
+/* TITLES AS BUTTONS */
+.content a {
+    color:black;
+}
+.content a:hover h1 {
+    color:black;
+    background-color: #e4e41f;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/* OUR OVERALL IMAGE BOX */
+figure {
+    width: 59.8vw;
+    height: auto;
+}
+figure img {
+    border: 1px solid black;
+}
+.small {
+    width: 10vw !important;
+}
+.smaller {
+    width: 5vw !important;
+}
+figcaption {
+    padding-right: 4vw;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+/* FOOTER */
+footer {
+    height: 1.5vw;
+    background-color: #e4e41f;
+    border: 1px solid black;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    width: 100%
+}
+footer p {
+    font-family: space-mono, sans-serif;
+    color: black;
+    font-size: 0.8vw;
+    text-align: left;
+    padding: 0.1vw;
+}
+/* SIGN UP NEWSLETTER */
+#mc_embed_signup {
+    list-style: none;
+    clear: left;
+    font: 14px Helvetica,Arial,sans-serif;
+}
+li {
+    list-style: none !important;
+}
+/* Keyframes for infinite scroll animation */
+@keyframes scrollText {
+    from   { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes scrollGallery {
+    from   { transform: translateY(0%); }
+    to { transform: translateY(-348vw); }
+  }
+}
+/* 
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+/
+*/
+@media (max-width:850px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+/* HEADER */
+/* HEADER */
+.row2 {
+    display: flex;
+}
+/* MOBILE DIV DISPLAY */
+#desktop {
+    display: none;
+}
+.container2 {
+    position: inline-block;
+}
+header {
+    border: 1pt solid black;
+    height: fit-content;
+    background-color: #e4e41f;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+header h1 {
+    color: black;
+    font-weight: 400; 
+    font-family: coolvetica, sans-serif;
+    font-size: 10vw;
+    white-space: nowrap;
+    margin-top: -1.2vw;
+    /*
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+    */
+    /* ANimation (dont forget the keyframes at the end of the doc */
+    animation: scrollText 30s infinite linear;
+}
+#menu {
+    width: 101vw !important;
+}
+/*
+header h1 span {
+    color: #00AEEF;
+}
+*/
+/* no scrollbar */
+header {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+header::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+/* first line */
+.row { /* OUR MAIN CONTAINER */
+    border: 1pt solid black;
+    height: fit-content;
+}
+.container { /* OUR SUB CONTAINER */
+    position: inline-block;
+    border-right: 1pt solid black;
+    text-align: center;
+    background-color: #f3efea;
+    height: fit-content;
+    overflow: scroll;
+}
+.container img {
+    height: relative;
+    width: 100%;
+}
+/* LIST OF MENU ITEMS ON TOP */
+a {
+    text-decoration: none;
+}
+.subhead {
+    display: none;
+}
+#mobile .Head {
+    width: 100%;
+}
+.Head {
+    height: fit-content;
+    border-bottom: 1pt solid black;
+    font-size: 7vw;
+    text-align: left;
+    width: 100%;
+}
+.Head h1 {
+    color: black;
+    /* text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000; */
+    font-weight: 300;
+    font-family: nimbus-sans-extended, sans-serif;
+    padding-left: 1vw;
+    text-align: center;
+}
+#hidden {
+    display:none;
+}
+
+/* SECOND ROW OF MENU */
+.subhead2 {
+    display: none;
+}
+.Head2 {
+    width: 100%;
+    background-color: #e4e41f;
+    height: fit-content;
+    border-bottom: 1pt solid black;
+    font-size: 4.5vw;
+    text-align: center;
+}
+.Head2 h1 {
+    color: black;
+    /* text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000; */
+    font-weight: 300;
+    font-family: nimbus-sans-extended, sans-serif;
+    padding-left: 1vw;
+}
+.Head2, #pink {
+    background-color:#e4e41f;
+}
+/* MAIN CONTENT */
+.content {
+    background-color:#f3efea;
+    text-align: center;
+    padding: 3vw;
+    width: 100%;
+    height: fit-content;
+    overflow: scroll;
+}
+#gallery .content {
+    overflow: hidden;
+}
+/* FIGURE STYLES */
+#scroll figure {
+    animation: scrollGallery 60s infinite linear;
+    background-color:#e4e41f;
+    border: 1px solid black;
+}
+#scroll img {
+    border-bottom: 1px solid black;
+}
+#scroll figcaption {
+    font-family: space-mono, sans-serif;
+    font-size: small;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    color: black;
+}
+img {
+    border: 1px solid black;
+}
+.content p {
+    width: 90%;
+    padding-right: 1vw;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+.content p span {
+    font-weight: 500;
+}
+.content h1 {
+    font-family: nimbus-sans-extended, sans-serif;
+    font-weight: 300;
+    font-size: 6vw;
+    background-color:#e4e41f;
+    color: black;
+    border: 1px solid black;
+    width: 90vw;
+    padding: 1.5vw;
+}
+figure {
+    width: 90vw;
+    height: auto;
+    padding: 1vw;
+}
+figcaption {
+    padding-right: 4vw;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+/* FOOTER */
+footer {
+    height: 5vw;
+    background-color: #e4e41f;
+    border: 1px solid black;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    width: 100%
+}
+footer p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 3vw;
+    text-align: left;
+    padding: 0.8vw;
+}
+/* Keyframes for infinite scroll animation */
+@keyframes scrollText {
+    from   { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes scrollGallery {
+    from   { transform: translateY(0%); }
+    to { transform: translateY(-110vw); }
+  }
+}
