@@ -568,8 +568,16 @@ img {
     background-color:#e4e41f;
     color: black;
     border: 1px solid black;
+    border-radius: 10vw;
     width: 90vw;
     padding: 1.5vw;
+}
+span a {
+    background-color: #e4e41f;
+    padding: 1vw;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10vw;
 }
 figure {
     width: 90vw;
